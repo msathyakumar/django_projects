@@ -1,0 +1,43 @@
+{% extends 'testapp/base.html'%}
+
+{% block content%}
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="mainform">Doctor Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="patient">Patient Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="prescriptions">Prescriptions</a>
+    </li>
+  </ul>
+</div>
+<div class="dropdown-divider"></div>
+{%if users %}
+<H5>Patient details :</H5>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+        <th scope="col">address</th>
+        <th scope="col">disease</th>
+      </tr>
+    </thead>
+{% for user in users%}
+
+    <tbody>
+        <tr>
+          <th scope="row">{{user.id}}</th>
+          <td>{{user.name}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.disease}}</td>
+        </tr>
+{%endfor%}
+</tbody>
+</table>
+{%else%}
+<h1>data not found</h1>
+{%endif%}
+{%endblock%}

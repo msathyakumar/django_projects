@@ -1,0 +1,36 @@
+{%extends 'testapp/base.html' %}
+
+{%block content%}
+<div>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="mainform">Doctor Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="patient">Patient Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="prescriptions">Prescriptions</a>
+    </li>
+  </ul>
+</div>
+<div class="dropdown-divider"></div>
+<H5>Doctor details :</H5>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Sathya</td>
+        <td>Kuppam</td>
+      </tr>
+</tbody>
+</table>
+
+{%endblock%}
