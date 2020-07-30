@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>welcome_page</title>
+    </head>
+    <body>
+        <a href='login' style='color:blue'>login</a>
+        <a href="logout" style="color:blue;text-align: right;">logout</a>
+        <a href='userlogin' style='color:blue'>userlogin</a>
+        <h1 style="text-align: center;"> hii guys welcome to this page</h1>
+        <table border="1">
+            <tr>
+                <th>id</th>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>email</th>
+        </tr>
+        {%for detail in details%}
+        <tr>  
+            <td>{{detail.id}} </td>
+            <td>{{detail.first_name}}</td>
+            <td>{{detail.last_name}}</td>
+            <td>{{detail.email}}</td>          
+        </tr>
+        {%endfor%}  
+        </table>
+
+        <table border="2" style="background-color: blue;text-align: center;">
+            <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>age</th>
+        </tr>
+        {%for family in families%}
+        <tr>  
+            <td>{{family.id}} </td>
+            <td>{{family.name}}</td>
+            <td>{{family.age}}</td>          
+        </tr>
+        {%endfor%}  
+        </table>
+         
+         
+         
+    </body>
+</html>
+
+
