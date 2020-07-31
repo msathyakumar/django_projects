@@ -1,0 +1,10 @@
+{%extends 'testapp/home.html'%}
+
+{%block content%}
+<form action="details" method="POST" >
+    {%csrf_token%}
+    {{form}}
+    <input type="submit" name="submit">
+</form>
+
+{%endblock%}

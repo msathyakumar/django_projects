@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%block content%}
+    <h3 style="text-align: center;color:skyblue;"> welcome sathya</h3>
+    <a href="details">Details_Entry_Log</a>
+    <a href="login">Login_page</a>
+    {%endblock%}
+
+    {%for message in messages%}
+{{message}}
+{%endfor%}
+{{perm}}
+</body>
+</html>

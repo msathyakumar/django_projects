@@ -1,0 +1,10 @@
+{%extends 'testapp/home.html'%}
+
+{%block content%}
+<h2>you have successfully logged in</h2>
+<a href="{%url 'logout'%}">logout</a>
+{%for message in messages%}
+{{message}}
+{%endfor%}
+
+{%endblock%}
